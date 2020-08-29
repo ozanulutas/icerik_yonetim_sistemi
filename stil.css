@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {box-sizing: border-box;}
+		
+body {
+	margin: 0px;
+	background-color: #BAE2FB; /*#BAE2FB lightskyblue*/ /*maroon#AA195F;#FFC150*/
+	
+}
+
+
+/***************** 
+* HEADER
+******************/
+header a {			
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-decoration: none;
+	color: #FFC150;
+	font-size: 45pt;
+	font-weight: bold;		
+}
+		
+#header {
+	padding:30px;	/* resim konmazsa oralamak için*/		
+	background-color: #AA195F; 			
+	text-align: center;	
+}		
+
+#logo {
+	width: 200px;			
+	vertical-align: middle;	
+	margin-right: 10px;
+}
+
+/**************************
+* İÇERİK GÖVDESİ, SOL MENÜ
+***************************/
+#satir {
+	max-width: 1200px;
+	margin: auto;
+	font-family: Calibri, sans-serif;
+	font-size:14pt;
+	padding: 7px;
+}
+
+#sagSutun {
+	padding: 45px 65px 115px 65px;	
+	background-color: white;	
+	width: 75%;
+}
+
+#solSutun {
+	width: 25%;
+	padding: 0px 15px 0px 15px;		
+}
+
+#sagSutun, #solSutun {
+	float: left;  /**/
+}
+
+#satir:after {
+	content: "";
+  	display: table;
+  	clear: both;	
+}
+
+#cocukSolSutun {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background-color: whitesmoke;
+  	padding: 20px;
+  	margin-top: 0px ;
+	border: 7px solid #FFAB13;
+	border-radius: 5px;
+}
+#cocukSolSutun a { color: darkblue; }
+#cocukSolSutun a:hover { color: skyblue; }
+#cocukSolSutun h2 { color: #AA195F; }
+#cocukSolSutun ul { list-style: none; padding-left: 12px; }
+
+/***************** 
+* UST MENU 
+******************/
+#menu {
+	width: 100%; 
+	height: 54px;
+	clear: both;
+	background-color: rgb(43, 43, 43);	/*ana menü rengi*/
+	border-bottom: 4px solid rgb(212, 76, 50);	
+	text-align: center;
+}
+
+.menu { 	
+	margin: 0; 
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	z-index: 1;	
+	background-color: inherit;	
+	border-bottom: inherit;
+}
+
+.menu li {
+	list-style-type: none;
+	display: inline-block;
+	/**/float: left;
+	width: 160px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 16pt;
+	font-weight: lighter;	
+}
+
+.menu li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.menu li:hover {
+	background-color:rgb(68, 68, 68);/*ana menü:hover */
+	border-left: 4px solid rgb(212, 76, 50);
+}
+
+.menu ul { display: none; }
+
+.menu li:hover > ul { 
+	display: inline-block; 
+	margin-left: -44px; 
+}
+
+.menu ul li { background-color: rgb(68, 68, 68) } /*alt menü rengi*/
+.menu ul li:hover { background-color: rgb(212, 76, 50); }
+.menu ul ul { display: none; }
+
+.menu ul li:hover > ul {
+	display: block;
+	margin-left: 115px;
+	margin-top: -50px;
+}
+
+.menu ul ul li {
+	background-color: rgb(68, 68, 68);
+	content: none;
+}
+
+.menu ul ul li:hover { background-color: rgb(212, 76, 50) }
+.menu ul li:before { content: none; }
+.menu ul ul li:before { content: none; }
+li { font-weight: lighter; }
+
+/***************** 
+* FOOTER
+******************/
+#footer {
+	font-family: Calibri, sans-serif;
+	padding:15px;
+	height:auto;
+	background-color: #AA195F;
+	text-align: center;		
+	/**/display: inline-block;
+	width: 100%;
+	float: left;
+}
+
+#footer div {
+	padding: 0px 2px 0px 2px;
+	height: 100%;
+	width: 33%;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+}
+
+/***********************************************************
+*ARŞİV, ANA SAYFA, MAKALE GÖSTER, MENU İÇERİK GÖSTER (INDEX)
+***********************************************************/
+#makaleler p {
+	border-left: solid 5px orange;
+	padding-left: 10px;
+}
+
+#makaleler a {
+	text-decoration: none;
+	color: #960000;
+	font-size: 0.9em;
+}
+
+#makaleler a:hover {
+	color: #C11C6C;	
+}
+
+#yayinTarihi {
+	text-align: right;
+	opacity: 0.5;
+	font-size: 0.8em;
+}
+
+#kategoriLink {
+	text-decoration: none;
+	color: orangered;
+}
+
+#kategoriLink:hover { color: #D83A00; }
+
+a { text-decoration: none; }
+
+#yorumlar {
+	border: 2px solid #FFC150;
+	padding: 0px 11px 0px 11px;
+	margin: 10px 10px 20px 10px;
+	border-radius: 7px;
+}
+
+#sayfalar { text-align: center; }
+#sayfalar li { 
+	margin: 3px; 
+	padding: 3px; 
+	border: 3px solid #FFC150;
+	border-radius: 7px;
+	background-color: #FFC150
+}
+#sayfalar ul { list-style-type: none; display: inline-flex; }
+#sayfalar a { color: darkblue; }
+#sayfalar a:hover { color: skyblue; }
+#sayfalar li:hover { background-color: antiquewhite}
+
+/*****************************
+*GİRİŞ/ KAYIT
+******************************/
+#girisFormu {
+	margin: 75px;
+	/*text-align: right;*/
+	background-color: #7DD4B7;
+	padding: 60px 120px 60px 120px;
+	border-radius: 2px;
+	box-shadow: 5px 5px 15px gray;
+}
+
+#girisFormu input {
+	border-radius: 2px;
+	border-style: none;
+	padding: 4px;
+	margin: 6px 0px 6px 0px;
+	font-size: 13pt;
+	width: 100%;
+}
+
+#girisFormu input[type="submit"] {
+	width: 100%;	
+	padding: 8px 0px 8px 0px;	
+	margin-top: 12px;
+	font-weight: bold;
+	background-color: #00B600;
+	color: white;
+	box-shadow: 3px 3px 15px gray;
+	cursor: pointer;
+}
+#girisFormu input[type="submit"]:hover { filter: brightness(120%); }
+#girisFormu a:hover { text-decoration: underline; filter: brightness(120%); }
+
+/********************************************
+* MAKALE/ KATEGORİ/ KULLANICI LİSTELE (ADMİN)
+********************************************/
+#makaleTablo {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#makaleTablo th, #makaleTablo td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+#makaleSec:hover {
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
+
+/******************************************************
+* MAKALE/ KATEGORİ/ KULLANICI/ FOOTER/ HEADER DÜZENLE, 
+* YENİ MAKALE/ KATEGORİ/ MENÜ (ADMİN)
+******************************************************/
+#sil { text-align: right; }
+#sil a { color: red; cursor: pointer; }
+#sil a:hover { color: #CB0000; text-decoration: underline; }
+
+#baslik {
+	color: #AA195F;
+}
+
+#girdiBaslik {
+	font-weight: bold;
+	margin-bottom: -20px;
+}
+
+#makaleFormu input, #makaleFormu textarea, #makaleFormu select {
+	font-size: 14pt;
+	border: solid 1px lightgray; 
+	padding: 5px;	
+	max-width: 100%;
+	min-width: 100%;
+	font-family: Calibri, sans-serif;
+}
+
+#makaleFormu input[type="submit"] {
+	padding: 8px;	
+	margin-top: 10px;
+	font-weight: bold;
+}
+#makaleFormu input[type="submit"]:hover { cursor: pointer; filter: brightness(80%); }
+
+#footer input[type="submit"] {
+	width: 100%;
+	height: 100%;
+	border-style: dotted;
+	font-weight: bold;
+	font-size: 14pt;
+	background-color: inherit;
+	padding: 7px;
+}
+
+#footer input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: lightgray;
+	opacity: 0.3;
+}
+
+#footerTalimat { font-weight: bold;}
+
+#headerResimListe { 
+	display: flex; 	
+	overflow: scroll;
+	overflow-y: hidden;
+	height: 225px;
+}
+
+#headerResimSec {
+	float: left; 
+	margin: 3px;
+	padding: 3px;
+	text-align: center;
+	min-width: 200px;
+	min-height: 200px;	
+}
+
+#headerResimSec div {
+	height: 170px;
+}
+
+#headerResimSec div img {	
+	max-width: 170px;
+	max-height: 170px;	
+}
+
+#resmiSil {
+	display: inline-flex;
+	width: 80px;	
+	border-style: none;
+	float: right;	
+}
+
+#resmiSil input[type="submit"] {
+	margin: 0px;
+	padding: 0px;
+	background-color: inherit;
+	height: 22px;
+	border-color: white;
+	color: red;
+	font-weight: lighter;
+}
+
+#resmiSil input[type="submit"]:hover {
+	cursor: pointer;
+	color: #D30000;
+	text-decoration: underline;
+}
+
+#renkSec {
+	width: 50px;
+	display: inline-block;
+	margin: 0px 15px 6px 0px;
+}
+input[type="color"] {
+	height: 30px;
+	
+}
